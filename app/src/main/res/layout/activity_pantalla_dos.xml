@@ -3,20 +3,18 @@
     android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity">
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="freddypallares.per161semana6.PantallaDos">
 
     <TextView android:text="@string/hello_world" android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/textView" />
+        android:id="@+id/textView2" />
 
     <EditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:inputType="textPersonName"
-        android:text="Name"
-        android:ems="10"
-        android:id="@+id/usuario"
-        android:layout_below="@+id/textView"
+        android:id="@+id/usuarioPDos"
+        android:layout_below="@+id/textView2"
         android:layout_centerHorizontal="true"
         android:hint="usuario" />
 
@@ -25,38 +23,38 @@
         android:layout_height="wrap_content"
         android:inputType="textPassword"
         android:ems="10"
-        android:id="@+id/clave"
-        android:layout_below="@+id/usuario"
+        android:id="@+id/contrasenaPDos"
+        android:layout_below="@+id/usuarioPDos"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="55dp"
+        android:layout_marginTop="40dp"
         android:hint="password" />
 
-    <EditText
+    <Button
+        style="?android:attr/buttonStyleSmall"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:inputType="textPassword"
-        android:ems="10"
-        android:id="@+id/contrasenaConfi"
+        android:text="atras"
+        android:id="@+id/atrasPDos"
         android:layout_centerVertical="true"
-        android:layout_alignEnd="@+id/clave"
-        android:hint="confirmar contraseña" />
+        android:layout_toStartOf="@+id/usuarioPDos" />
 
     <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="entrar"
-        android:id="@+id/enviarUno"
-        android:layout_marginTop="47dp"
-        android:layout_below="@+id/contrasenaConfi"
-        android:layout_centerHorizontal="true" />
-
-    <Button
+        style="?android:attr/buttonStyleSmall"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="log in"
-        android:id="@+id/enviarDos"
-        android:layout_below="@+id/enviarUno"
-        android:layout_alignStart="@+id/enviarUno"
-        android:layout_marginTop="31dp" />
+        android:id="@+id/enviarTres"
+        android:layout_alignBottom="@+id/atrasPDos"
+        android:layout_toEndOf="@+id/usuarioPDos" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New Text"
+        android:id="@+id/confirmacion"
+        android:layout_below="@+id/atrasPDos"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="48dp"
+        android:hint="mensaje de confirmacion" />
 
 </RelativeLayout>
